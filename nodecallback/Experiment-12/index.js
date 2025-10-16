@@ -6,7 +6,7 @@ app.set('json spaces', 2);
 
 app.use(express.json());
 
-const LOCK_TIMEOUT = 60 * 1000; 
+const LOCK_TIMEOUT = 60 * 1000;
 
 const seats = {
   '1': { status: 'available' },
