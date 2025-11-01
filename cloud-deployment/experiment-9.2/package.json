@@ -1,0 +1,12 @@
+{
+  "name": "experiment-9.2",
+  "version": "1.0.0",
+  "description": "Simple CI/CD pipeline experiment using GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Building project...' && mkdir -p build && node index.js && echo 'Build complete' > build/output.txt"
+  },
+  "keywords": [],
+  "author": "Shivansh Kutlehria",
+  "license": "ISC"
+}

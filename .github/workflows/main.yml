@@ -1,0 +1,31 @@
+name: Experiment-9.2 Simple CI/CD Pipeline
+
+on:
+  push:
+    paths:
+      - 'cloud-deployment/experiment-9.2/**'
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: cloud-deployment/experiment-9.2
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install || echo "No dependencies to install"
+
+      - name: Run build
+        run: npm run build
