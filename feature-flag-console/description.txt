@@ -1,7 +1,7 @@
 🧠 Project Title
 Real-Time Feature Flag Management Console (MERN + Redis)
 
-🧩 Overvi
+🧩 Overview
 
 🚀 Core Components
 1. Backend (Node.js + Express + Redis + MongoDB)
